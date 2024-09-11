@@ -3,6 +3,20 @@
   "version": "1.0.0",
   "main": "dist/decorators.js",
   "types": "dist/decorators.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/decorators.d.ts",
+      "default": "./dist/decorators.js"
+    },
+    "./decorator": {
+      "types": "./dist/decorators.d.ts",
+      "default": "./dist/decorators.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "default": "./dist/types.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
