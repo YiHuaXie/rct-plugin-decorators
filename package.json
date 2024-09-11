@@ -1,25 +1,11 @@
 {
   "name": "rct-plugin-decorators",
   "version": "1.0.0",
-  "main": "dist/decorators.js",
-  "types": "dist/decorators.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/decorators.d.ts",
-      "default": "./dist/decorators.js"
-    },
-    "./decorator": {
-      "types": "./dist/decorators.d.ts",
-      "default": "./dist/decorators.js"
-    },
-    "./types": {
-      "types": "./dist/types.d.ts",
-      "default": "./dist/types.js"
-    }
-  },
+  "main": "lib/decorators.js",
+  "types": "lib/decorators.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "setup": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -35,7 +21,7 @@
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
-    "typescript": "^5.5.4",
-    "@types/node": "^22.5.4"
+    "@types/node": "^22.5.4",
+    "typescript": "^5.5.4"
   }
 }

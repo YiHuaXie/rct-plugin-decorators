@@ -1,3 +1,10 @@
 # .npmignore
-# src/
-# tsconfig.json
+/.github
+/node_modules
+/.vscode
+/src
+tsconfig.json
+tsconfig.*.json
+
+yarn.lock
+package-lock.json
