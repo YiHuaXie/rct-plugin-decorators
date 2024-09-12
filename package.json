@@ -4,8 +4,8 @@
   "main": "lib/decorators.js",
   "types": "lib/decorators.d.ts",
   "scripts": {
-    "build": "tsc",
-    "setup": "npm install && npm run build"
+    "build": "rm -fr ./lib && tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
